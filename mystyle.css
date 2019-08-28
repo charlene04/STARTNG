@@ -1,0 +1,72 @@
+body{
+    text-align: justify;
+    margin: auto 15em;
+}
+table {
+    width: 100%;
+    min-height: 100%;
+}
+[view]{
+    background: #f3f3d1;
+}
+img {
+    height: 20em;
+    width: 100%;
+    border-radius: 5em;
+    align-content: center;
+}
+header {
+   
+    font-size: 1.5rem;
+    top:50px;
+    margin-left: 20px;
+    position: absolute;
+    text-align: right;
+    margin-bottom: 50px;
+    
+}
+
+[side_view]{
+    width: 35%;
+    background: grey;
+}
+[side_content]{
+    margin: 0 20px;
+    line-height: 5px;
+}
+
+[side_content] h3{
+    color: #fff;
+}
+[intro]{
+    line-height: 18px;
+}
+h3{
+    margin-top: 50px;
+}
+
+[interest]{
+    bottom: 20px;
+}
+[main]{
+    width: 65%;
+}
+[main_content]{
+    line-height: 15px;
+    
+    margin: 0 20px;
+}
+
+[main_content] h3{
+    color: #5f7d74;
+}
+hr {
+    border: 1px dotted #5f7d74;
+}
+span {
+    float: right;
+    font-style: italic;
+}
+[academic], [experience]{
+    line-height: 5px;
+}
