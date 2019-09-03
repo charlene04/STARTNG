@@ -2,13 +2,38 @@ body{
     text-align: justify;
     margin: auto 15em;
 }
-table {
-    width: 100%;
-    min-height: 100%;
+
+.column, .form_view {
+    float: left;
+  }
+.form_view{
+    width: 50%;
 }
-[view]{
-    background: #f3f3d1;
+
+.form_view input, .form_view textarea{
+    width: 80%;
+    margin: auto;
 }
+.left{
+      width: 35%;
+  }
+
+ .right{
+      width: 65%;
+      background: #f3f3d1;
+  }
+  
+.resume_view{
+    display: flex;   
+}
+  
+.resume_view:after, .form:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
 img {
     height: 20em;
     width: 100%;
@@ -16,23 +41,23 @@ img {
     align-content: center;
 }
 header {
-   
+    line-height: 0;
     font-size: 1.5rem;
     top:50px;
+    position: relative;
     margin-left: 20px;
-    position: absolute;
     text-align: right;
     margin-bottom: 50px;
     
 }
 
-[side_view]{
+.left{
     width: 35%;
     background: grey;
 }
 [side_content]{
     margin: 0 20px;
-    line-height: 5px;
+    line-height: 7px;
 }
 
 [side_content] h3{
@@ -45,14 +70,8 @@ h3{
     margin-top: 50px;
 }
 
-[interest]{
-    bottom: 20px;
-}
-[main]{
-    width: 65%;
-}
 [main_content]{
-    line-height: 15px;
+    line-height: 17px;
     
     margin: 0 20px;
 }
@@ -62,6 +81,7 @@ h3{
 }
 hr {
     border: 1px dotted #5f7d74;
+    margin-top: 100px;
 }
 span {
     float: right;
@@ -69,4 +89,78 @@ span {
 }
 [academic], [experience]{
     line-height: 5px;
+}
+
+[contact_me] form{
+    text-align: center;
+    background: transparent;
+    padding: 15px;
+   
+}
+[contact_me]{
+    background: #4e2f4f29;
+    margin-top: 20px;
+}
+
+[contact_me] input[type="text"], 
+[contact_me] input[type="email"], 
+[contact_me] textarea{
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    border: none;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid black;
+    margin-bottom: 3px;
+    overflow: hidden;
+    height: 25px;
+}
+
+[contact_me] input[type="submit"]{
+    color: #fff;
+    background: black;
+    border-radius:5px;
+    padding: 5px; 
+}
+[contact_me] textarea{
+    height: 70px;
+}
+
+#contact_form {
+    overflow: hidden;
+}
+button {
+    margin: 5px auto;
+    background: transparent;
+}
+
+[intro] header.name{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    body {
+        margin: 0;
+    }
+   
+}
+@media screen and (max-width: 600px){
+    [intro] header.name{
+        display: contents;
+    }
+    .right .name{
+        display: none;
+    }
+    .column, .form_view{
+      width: 100%;
+    }
+    body {
+        margin: 0;
+    }
+    .resume_view{
+        display: table;   
+    }
 }
